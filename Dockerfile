@@ -8,22 +8,22 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update \
-	&& apt-get install -yqq --no-install-recommends \
-        ca-certificates \
-        git \
-		locales \
-		wget
+    && apt-get install -yqq --no-install-recommends \
+    ca-certificates \
+    git \
+    locales \
+    wget
 
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
-	&& locale-gen \
-	&& /usr/sbin/update-locale
+    && locale-gen \
+    && /usr/sbin/update-locale
 
 RUN apt-get update \
     && apt-get install -yqq --no-install-recommends \
-		r-base \
-		r-base-dev \
-        r-base-core \
-		r-recommended
+    r-base \
+    r-base-dev \
+    r-base-core \
+    r-recommended
 
 RUN rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/*
