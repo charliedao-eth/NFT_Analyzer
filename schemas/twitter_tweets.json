@@ -1,21 +1,33 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/tweets.schema.json",
-    "title": "Twitter - Tweets",
-    "description": "Twitter tweets.",
-    "type": "object",
-    "properties": {
-      "accountName": {
-        "type": "string",
-        "description": "Twitter account name"
-      },
-      "createdAt": {
-        "type": "datetime",
-        "description": "When tweet was posted."
-      },
-      "text": {
-        "type": "string",
-        "description": "Content of tweet."
-      }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/tweets.schema.json",
+  "title": "Twitter - Tweets",
+  "description": "Twitter tweets.",
+  "type": "object",
+  "properties": {
+    "accountName": {
+      "type": "string",
+      "description": "Twitter account name"
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "When tweet was posted."
+    },
+    "text": {
+      "type": "string",
+      "description": "Content of tweet."
+    },
+    "favourite_count": {
+      "type": "number",
+      "description": "Count of favourites."
+    },
+    "retweet_count": {
+      "type": "number",
+      "description": "Count of retweets."
+    },
+    "like_count": {
+      "type": "number",
+      "description": "Count of likes."
     }
   }
+}
