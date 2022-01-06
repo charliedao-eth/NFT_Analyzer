@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/twitter-growth.schema.json",
+  "title": "Twitter - Growth",
+  "description": "Growth metrics of Twitter account.",
+  "type": "object",
+  "properties": {
+    "accountName": {
+      "type": "string",
+      "description": "Twitter account name"
+    },
+    "date": {
+      "type": "string",
+      "description": "Date metric was recorded."
+    },
+    "followerCount": {
+      "type": "number",
+      "description": "Count of followers."
+    },
+    "followingCount": {
+      "type": "number",
+      "description": "Count of following."
+    },
+    "tweetCount": {
+      "type": "number",
+      "description": "Count of tweets."
+    },
+    "favouriteCount": {
+      "type": "number",
+      "description": "Count of favourites."
+    }
+  }
+}

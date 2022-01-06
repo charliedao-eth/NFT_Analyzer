@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/token-owners.schema.json",
+  "title": "Token - Owners",
+  "description": "Owners of each NFT.",
+  "type": "object",
+  "properties": {
+    "tokenAddress": {
+      "type": "string",
+      "description": "Address of token."
+    },
+    "tokenId": {
+      "type": "string",
+      "description": "Token ID."
+    },
+    "tokenCount": {
+      "type": "number",
+      "description": "Number of tokens owned."
+    },
+    "ownerAddress": {
+      "type": "string",
+      "description": "Address of owner."
+    },
+    "blockNumber": {
+      "type": "string",
+      "description": "Block number."
+    },
+    "blockNumberMinted": {
+      "type": "string",
+      "description": "Block number when minted."
+    },
+    "contractType": {
+      "type": "string",
+      "description": "Type of contract."
+    },
+    "tokenUri": {
+      "type": "string",
+      "description": "URI of token."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata of token."
+    },
+    "syncedAt": {
+      "type": "string",
+      "description": "Sync time."
+    },
+    "collectionName": {
+      "type": "string",
+      "description": "Name of NFT collection."
+    },
+    "tokenSymbol": {
+      "type": "string",
+      "description": "Symbol of token."
+    }
+  }
+}

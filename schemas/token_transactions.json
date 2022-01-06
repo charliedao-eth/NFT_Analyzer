@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/token-transactions.schema.json",
+  "title": "Token - Transactions",
+  "description": "History of token transactions.",
+  "type": "object",
+  "properties": {
+    "blockTimestamp": {
+      "type": "string",
+      "description": "Block timestamp."
+    },
+    "fromAddress": {
+      "type": "string",
+      "description": "Address where token was sent from."
+    },
+    "toAddress": {
+      "type": "string",
+      "description": "Address where token was sent to."
+    },
+    "eventPlatform": {
+      "type": "string",
+      "description": "Platform where transaction occurred."
+    },
+    "eventType": {
+      "type": "string",
+      "description": "Type of transaction event."
+    },
+    "platformFee": {
+      "type": "number",
+      "description": "Platform fee."
+    },
+    "price": {
+      "type": "number",
+      "description": "Price of transaction."
+    },
+    "priceUsd": {
+      "type": "number",
+      "description": "Transaction price in USD."
+    },
+    "collectionName": {
+      "type": "string",
+      "description": "Name of NFT collection."
+    },
+    "tokenId": {
+      "type": "string",
+      "description": "Token ID."
+    },
+    "transactionCurrency": {
+      "type": "string",
+      "description": "Currency of transaction."
+    },
+    "transactionId": {
+      "type": "string",
+      "description": "Transaction ID."
+    }
+  }
+}

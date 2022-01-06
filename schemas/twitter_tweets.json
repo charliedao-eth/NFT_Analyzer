@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/tweets.schema.json",
   "title": "Twitter - Tweets",
-  "description": "Twitter tweets.",
+  "description": "Tweets of Twitter account.",
   "type": "object",
   "properties": {
     "accountName": {
@@ -13,19 +13,19 @@
       "type": "string",
       "description": "When tweet was posted."
     },
-    "text": {
+    "tweetText": {
       "type": "string",
       "description": "Content of tweet."
     },
-    "favourite_count": {
+    "favouriteCount": {
       "type": "number",
       "description": "Count of favourites."
     },
-    "retweet_count": {
+    "retweetCount": {
       "type": "number",
       "description": "Count of retweets."
     },
-    "like_count": {
+    "likeCount": {
       "type": "number",
       "description": "Count of likes."
     }
