@@ -15,7 +15,7 @@ The proposed workflow ensures new NFT collection data is compatible with our ana
 ### Token Owners
 
 | Feature             | Data type  | Data Name|
-| ------------------- | ---------- | |
+| ------------------- | ---------- | ---------- |
 | Token address       | `string`   | |
 | Token ID            | `string`   | | 
 | Token count         | `number`   | |
