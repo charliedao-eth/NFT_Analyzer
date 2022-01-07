@@ -75,3 +75,24 @@ The proposed workflow ensures new NFT collection data is compatible with our ana
 | Favourite count | `number`   | `favourites`   |         |
 | Retweet count   | `number`   | `retweets`     |         |
 | Like count      | `number`   | `likes`        |         |
+
+## Pipelines
+
+`cd` into a specific pipeline folder and treat as a Python module.
+
+### Etherscan
+
+```shell
+cd ./pipelines/etherscan
+python -m pip install .
+python ./etherscan_pipeline/ingest.py
+python ./etherscan_pipeline/synthesise.py
+```
+
+### OpenSea
+
+To do.
+
+### Flipside Crypto
+
+To do.
