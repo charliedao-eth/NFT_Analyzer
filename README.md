@@ -12,67 +12,65 @@ The proposed workflow ensures new NFT collection data is compatible with our ana
 
 ## Input schemas
 
-### Token Owners
+### Tokens
 
-| Feature             | Data type  | Data Name|
-| ------------------- | ---------- | ---------- |
-| Token address       | `string`   | |
-| Token ID            | `string`   | | 
-| Token count         | `number`   | |
-| Owner address       | `string`   | |
-| Block number        | `string`   | |
-| Block number minted | `string`   | |
-| Contract type       | `string`   | |
-| Token URI           | `string`   | |
-| Metadata            | `object`   | |
-| Synced at           | `string`   | |
-| Collection name     | `string`   | |
-| Token symbol        | `string`   | |
+| Feature                | Data type | Variable name      |
+| ---------------------- | --------- | ------------------ |
+| Token collection name  | `string`  | `collection_name`  |
+| Token contract address | `string`  | `contract_address` |
+| Token ID               | `string`  | `token_id`         |
+| Token symbol           | `string`  | `token_symbol`     |
+| Token URI              | `string`  | `token_uri`        |
+| Token metadata         | `object`  | `token_metadata`   |
+| Contract type          | `string`  | `contract_type`    |
+| Block number minted    | `string`  | `block_minted`     |
 
-### Token Ownership
+### Token owners
 
-| Feature             | Data type  |
-| ------------------- | ---------- |
-| Collection name     | `string`   |
-| Owner address       | `string`   |
-| Token count         | `number`   |
+| Feature                | Data type | Variable name      |
+| -------------------    | --------- | ------------------ |
+| Token contract address | `string`  | `contract_address` |
+| Token ID               | `string`  | `token_id`         |
+| Owner address          | `string`  | `owner_address`    |
 
-### Token Transactions
+### Token transactions
 
-| Feature              | Data type  |
-| -------------------- | ---------- |
-| Block timestamp      | `string`   |
-| From address         | `string`   |
-| To address           | `string`   |
-| Event platform       | `string`   |
-| Event type           | `string`   |
-| Platform fee         | `number`   |
-| Price                | `number`   |
-| Price USD            | `number`   |
-| Collection name      | `object`   |
-| Token ID             | `string`   |
-| Transaction currency | `string`   |
-| Transaction ID       | `string`   |
+| Feature               | Data type | Variable name      |
+| --------------------- | --------- | ------------------ |
+| Timestamp             | `string`  | `timestamp`        |
+| Block number          | `string`  | `block_number`     |
+| Hash                  | `string`  | `hash`             |
+| Nonce                 | `string`  | `nonce`            |
+| Contract address      | `string`  | `contract_address` |
+| From address          | `string`  | `from_address`     |
+| To address            | `string`  | `to_address`       |
+| Token collection name | `string`  | `collection_name`  |
+| Token ID              | `string`  | `token_id`         |
+| Value                 | `number`  | `value`            |
+| Gas amount            | `number`  | `gas`              |
+| Gas unit rate         | `number`  | `gas_rate`         |
+| Gas used              | `number`  | `gas_used`         |
+| Cumulative gas used   | `number`  | `gas_total`        |
+| Confirmation count    | `number`  | `confirmations`    |
 
-### Twitter Growth
+### Twitter growth
 
-| Feature         | Data type  |
-| --------------- | ---------- |
-| Account name    | `string`   |
-| Date            | `string`   |
-| Follower count  | `number`   |
-| Following count | `number`   |
-| Tweet count     | `number`   |
-| Favourite count | `number`   |
+| Feature         | Data type  | Variable name  |
+| --------------- | ---------- | -------------- |
+| Account name    | `string`   | `account_name` |
+| Date            | `string`   | `date`         |
+| Follower count  | `number`   | `followers`    |
+| Following count | `number`   | `following`    |
+| Tweet count     | `number`   | `tweets`       |
+| Favourite count | `number`   | `favourites`   |
 
+### Twitter tweets
 
-### Twitter Tweets
-
-| Feature         | Data type  |
-| --------------- | ---------- |
-| Account name    | `string`   |
-| Created at      | `string`   |
-| Tweet text      | `string`   |
-| Favourite count | `number`   |
-| Retweet count   | `number`   |
-| Like count      | `number`   |
+| Feature         | Data type  | Variable name  |
+| --------------- | ---------- | -------------- |
+| Account name    | `string`   | `account_name` |
+| Time stamp      | `string`   | `timestamp`    |
+| Tweet content   | `string`   | `content`      |
+| Favourite count | `number`   | `favourites`   |
+| Retweet count   | `number`   | `retweets`     |
+| Like count      | `number`   | `likes`        |
