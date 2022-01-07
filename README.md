@@ -32,6 +32,7 @@ The proposed workflow ensures new NFT collection data is compatible with our ana
 | Token contract address | `string`  | `contract_address` |
 | Token ID               | `string`  | `token_id`         |
 | Owner address          | `string`  | `owner_address`    |
+| Ownership timestamp    | `string`  | `owned_at`         |
 
 ### Token transactions
 
