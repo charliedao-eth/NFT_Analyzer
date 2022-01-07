@@ -5,7 +5,7 @@
   "description": "Growth metrics of Twitter account.",
   "type": "object",
   "properties": {
-    "accountName": {
+    "account_name": {
       "type": "string",
       "description": "Twitter account name"
     },
@@ -13,19 +13,19 @@
       "type": "string",
       "description": "Date metric was recorded."
     },
-    "followerCount": {
+    "followers": {
       "type": "number",
       "description": "Count of followers."
     },
-    "followingCount": {
+    "following": {
       "type": "number",
       "description": "Count of following."
     },
-    "tweetCount": {
+    "tweets": {
       "type": "number",
       "description": "Count of tweets."
     },
-    "favouriteCount": {
+    "favourites": {
       "type": "number",
       "description": "Count of favourites."
     }

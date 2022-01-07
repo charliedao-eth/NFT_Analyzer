@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/owners.schema.json",
+  "title": "Owners",
+  "description": "Owners of each NFT.",
+  "type": "object",
+  "properties": {
+    "contract_address": {
+      "type": "string",
+      "description": "Address of NFT contract."
+    },
+    "token_id": {
+      "type": "string",
+      "description": "ID of token."
+    },
+    "owner_address": {
+      "type": "number",
+      "description": "Address of token owner."
+    },
+    "owned_at": {
+      "type": "string",
+      "description": "Timestamp when ownership began."
+    }
+  }
+}

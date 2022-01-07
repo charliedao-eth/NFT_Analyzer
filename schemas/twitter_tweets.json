@@ -5,27 +5,27 @@
   "description": "Tweets of Twitter account.",
   "type": "object",
   "properties": {
-    "accountName": {
+    "account_name": {
       "type": "string",
       "description": "Twitter account name"
     },
-    "createdAt": {
+    "timestamp": {
       "type": "string",
       "description": "When tweet was posted."
     },
-    "tweetText": {
+    "content": {
       "type": "string",
       "description": "Content of tweet."
     },
-    "favouriteCount": {
+    "favourites": {
       "type": "number",
       "description": "Count of favourites."
     },
-    "retweetCount": {
+    "retweets": {
       "type": "number",
       "description": "Count of retweets."
     },
-    "likeCount": {
+    "likes": {
       "type": "number",
       "description": "Count of likes."
     }

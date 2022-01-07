@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/transactions.schema.json",
+  "title": "Transactions",
+  "description": "History of token transactions.",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "description": "Timestamp when transaction occurred."
+    },
+    "block_number": {
+      "type": "string",
+      "description": "Block number of transaction."
+    },
+    "hash": {
+      "type": "string",
+      "description": "Hash of transaction."
+    },
+    "nonce": {
+      "type": "string",
+      "description": "Nonce of transaction."
+    },
+    "contract_address": {
+      "type": "string",
+      "description": "Address of NFT contract."
+    },
+    "from_address": {
+      "type": "string",
+      "description": "Address where token was sent from."
+    },
+    "to_address": {
+      "type": "string",
+      "description": "Address where token was sent to."
+    },
+    "collection_name": {
+      "type": "string",
+      "description": "Name of NFT collection."
+    },
+    "token_id": {
+      "type": "string",
+      "description": "ID of token."
+    },
+    "value": {
+      "type": "number",
+      "description": "Value of transaction"
+    },
+    "gas": {
+      "type": "number",
+      "description": "Gas of transaction."
+    },
+    "gas_rate": {
+      "type": "number",
+      "description": "Gas unit rate price of transaction."
+    },
+    "gas_used": {
+      "type": "number",
+      "description": "Gas used during transaction."
+    },
+    "gas_total": {
+      "type": "number",
+      "description": "Cumulative gas used during transaction."
+    },
+    "confirmations": {
+      "type": "number",
+      "description": "Count of confirmations."
+    }
+  }
+}
